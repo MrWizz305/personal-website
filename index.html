@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aairav Kalra: Undergraduate at University of Waterloo</title>
+    <meta
+      name="description"
+      content="Personal portfolio for Aairav Kalra, Honours Physics co-op student at the University of Waterloo with a computing minor, tutoring experience, and technical projects."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="constellation-bg" aria-hidden="true"></canvas>
+    <header class="site-header is-over-hero">
+      <a class="brand" href="#top">Aairav Kalra</a>
+      <nav aria-label="Primary navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="aairav-kalra-resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="#contact">Contact</a>
+        <span class="social-nav">
+          <a
+            class="icon-nav"
+            href="https://www.linkedin.com/in/aairav-kalra"
+            aria-label="Aairav Kalra on LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.35 8.1h4.3V23H.35V8.1ZM7.55 8.1h4.12v2.04h.06c.57-1.08 1.98-2.22 4.07-2.22 4.35 0 5.15 2.86 5.15 6.58V23h-4.3v-7.54c0-1.8-.03-4.12-2.51-4.12-2.52 0-2.9 1.96-2.9 3.99V23h-4.3V8.1Z"
+              />
+            </svg>
+          </a>
+          <a
+            class="icon-nav"
+            href="https://github.com/MrWizz305"
+            aria-label="Aairav Kalra on GitHub"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.13c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .98-.31 3.17 1.18A11 11 0 0 1 12 6.07c.98 0 1.96.13 2.88.39 2.19-1.49 3.16-1.18 3.16-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.14c0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+              />
+            </svg>
+          </a>
+        </span>
+      </nav>
+    </header>
+
+    <main id="top">
+      <h1 class="sr-only">Aairav Kalra</h1>
+      <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-tagline" aria-hidden="true">PHYSICS.<br>CODE.<br>CURIOSITY.</div>
+        <div class="hero-person-wrap">
+          <img
+            class="hero-cutout"
+            src="aairav-cutout.png"
+            alt="Aairav Kalra writing physics on a chalkboard"
+          />
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
+      </section>
+
+      <div class="hero-intro">
+        <p class="eyebrow">Honours Physics Co-op · Computing Minor</p>
+        <p class="hero-text">
+          I’m a University of Waterloo student who enjoys making technical ideas easier to understand,
+          whether that means helping students through calculus and physics, organizing science communities,
+          or building tools with Python, web interfaces, Linux systems, and local AI.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:kalraaairav@gmail.com" target="_blank" rel="noopener">Email me</a>
+          <a class="button secondary" href="#projects">View projects</a>
+          <a class="button secondary" href="aairav-kalra-resume.pdf" target="_blank" rel="noopener">View resume</a>
+        </div>
+      </div>
+
+      <section class="stats" aria-label="Highlights">
+        <div>
+          <strong>4.8/5</strong>
+          <span>Student Rating as Humber Math Tutor</span>
+        </div>
+        <div>
+          <strong>130+ hrs</strong>
+          <span>UW Physics Tutorial Centre Volunteering</span>
+        </div>
+        <div>
+          <strong>3.9 GPA</strong>
+          <span>University of Waterloo Academic Standing</span>
+        </div>
+        <div>
+          <strong>3 Terms</strong>
+          <span>University of Waterloo Term Distinction</span>
+        </div>
+        <div>
+          <strong>90+ Avg</strong>
+          <span>High School Graduation Average</span>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Teaching, service, and technical teamwork</h2>
+        </div>
+        <div class="timeline">
+          <article class="icon-card teach">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M11 9h29v22H11V9Zm4 4v14h21V13H15Z" />
+                <path d="M7 31h20v5H7v-5Z" />
+                <circle cx="32" cy="25" r="5" />
+                <path d="M24 39c1-7 15-7 16 0H24Z" />
+                <path d="M20 31l-8-17 3-1 9 17-4 1Z" />
+                <path d="M15 15h17v3H15v-3Zm5 7h12v3H20v-3Z" />
+              </svg>
+            </span>
+            <div class="date">Jan 2026 - Apr 2026</div>
+            <h3>Math Tutor, Humber Polytechnic</h3>
+            <p>
+              Delivered one-on-one, group, drop-in, and appointment-based tutoring in mathematics, calculus,
+              statistics, and physics for Humber and Guelph-Humber students across North and Lakeshore campuses.
+            </p>
+            <p>
+              Led review sessions, workshops, and exam prep, created LaTeX learning material, promoted the
+              Math & Writing Centre, and earned the highest student rating among tutors.
+            </p>
+          </article>
+          <article class="icon-card service">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M32 7l9 9-6 6-3-3-16 16-2 6-7-7 6-2 16-16-3-3 6-6Z" />
+                <path d="M10 34l4 4-5 3-2-2 3-5Z" />
+              </svg>
+            </span>
+            <div class="date">Aug 2025 - Nov 2025</div>
+            <h3>Merchandiser, The Brick</h3>
+            <p>
+              Built and maintained floor models, helped prepare store events, supported customers during pickup,
+              wrapped products, loaded vehicles, and handled paperwork for a smooth service experience.
+            </p>
+          </article>
+          <article class="icon-card physics">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="3" />
+                <ellipse cx="24" cy="24" rx="17" ry="7" />
+                <ellipse cx="24" cy="24" rx="17" ry="7" transform="rotate(60 24 24)" />
+                <ellipse cx="24" cy="24" rx="17" ry="7" transform="rotate(120 24 24)" />
+              </svg>
+            </span>
+            <div class="date">Fall 2025</div>
+            <h3>Volunteer Tutor, UW Physics Tutorial Centre</h3>
+            <p>
+              Completed more than 130 volunteer hours helping students with physics and received a Certificate
+              of Appreciation for the highest volunteer hours.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+        </div>
+        <div class="project-mindmap" aria-label="Interactive project mindmap">
+          <svg class="mindmap-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M50 50 C35 35 28 30 17 26" />
+            <path d="M50 50 C58 31 62 22 76 20" />
+            <path d="M50 50 C32 55 25 65 16 76" />
+            <path d="M50 50 C62 55 74 60 84 73" />
+            <path d="M50 50 C49 63 49 74 50 88" />
+          </svg>
+          <button class="mindmap-center" type="button" aria-label="Project map center">Projects</button>
+          <article class="icon-card ml project-node active" data-project-node="true" tabindex="0" role="button" aria-expanded="true">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <path d="M18 14c5-5 15-4 19 2 4 7 0 16-8 18-9 2-17-6-15-15 1-2 2-4 4-5Z" />
+                <path d="M5 30c7-7 17-12 28-15 7-1 11 0 12 3 1 4-6 10-17 14-10 4-20 4-23 1-1-1-1-2 0-3Zm9 1c6 1 17-2 25-8-8 3-17 5-25 8Z" />
+              </svg>
+            </span>
+            <span>Machine Learning</span>
+            <h3>NASA Space Apps Exoplanet Classifier</h3>
+            <div class="project-detail">
+              <p>
+                Built and trained machine learning models on NASA data, then connected the model workflow to a web
+                app experience for exoplanet classification.
+              </p>
+              <a class="project-link" href="https://cobalt-exoplaner-finder.vercel.app/" target="_blank" rel="noopener">
+                Open exoplanet finder
+              </a>
+            </div>
+          </article>
+          <article class="icon-card product project-node" data-project-node="true" tabindex="0" role="button" aria-expanded="false">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="10" y="9" width="28" height="30" rx="3" />
+                <path d="M16 17h16" />
+                <path d="M16 24h8" />
+                <path d="M16 31h13" />
+                <circle cx="34" cy="24" r="2" />
+              </svg>
+            </span>
+            <span>Product Design</span>
+            <h3>PackVault</h3>
+            <div class="project-detail">
+              <p>
+                Worked on UI and UX for a trading-card collection tracker with price integration, aimed at helping
+                vendors manage inventory and collections.
+              </p>
+              <a class="project-link" href="https://pack-vault.vercel.app/" target="_blank" rel="noopener">
+                Open PackVault
+              </a>
+            </div>
+          </article>
+          <article class="icon-card web project-node" data-project-node="true" tabindex="0" role="button" aria-expanded="false">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="8" y="11" width="32" height="26" rx="3" />
+                <path d="M8 18h32" />
+                <path d="M19 25l-4 4 4 4" />
+                <path d="M29 25l4 4-4 4" />
+                <path d="M26 24l-4 10" />
+              </svg>
+            </span>
+            <span>Web Design</span>
+            <h3><a href="https://uwquantum.com" target="_blank" rel="noopener">UW Quantum Club Website</a></h3>
+            <div class="project-detail">
+              <p>
+                Helped build and shape the UW Quantum Club website alongside the other co-president, supporting
+                the club’s public presence, events, and student community outreach.
+              </p>
+              <a class="project-link" href="https://uwquantum.com" target="_blank" rel="noopener">
+                Visit uwquantum.com
+              </a>
+            </div>
+          </article>
+          <article class="icon-card systems project-node" data-project-node="true" tabindex="0" role="button" aria-expanded="false">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="9" y="12" width="30" height="21" rx="2" />
+                <path d="M18 39h12" />
+                <path d="M24 33v6" />
+                <path d="M16 23h8" />
+                <path d="M28 23h4" />
+              </svg>
+            </span>
+            <span>Systems</span>
+            <h3>Remote Workstation</h3>
+            <div class="project-detail">
+              <p>
+                Set up secure remote PC control using a Discord-based command layer, Oracle Cloud Ubuntu VPS,
+                Tailscale, Parsec, and a secured Windows agent.
+              </p>
+            </div>
+          </article>
+          <article class="icon-card ai project-node" data-project-node="true" tabindex="0" role="button" aria-expanded="false">
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48">
+                <rect x="13" y="13" width="22" height="22" rx="4" />
+                <path d="M18 7v6" />
+                <path d="M24 7v6" />
+                <path d="M30 7v6" />
+                <path d="M18 35v6" />
+                <path d="M24 35v6" />
+                <path d="M30 35v6" />
+                <path d="M7 18h6" />
+                <path d="M7 24h6" />
+                <path d="M7 30h6" />
+                <path d="M35 18h6" />
+                <path d="M35 24h6" />
+                <path d="M35 30h6" />
+                <circle cx="24" cy="24" r="4" />
+                <path d="M18 18l4 4" />
+                <path d="M30 18l-4 4" />
+                <path d="M18 30l4-4" />
+                <path d="M30 30l-4-4" />
+              </svg>
+            </span>
+            <span>Local AI</span>
+            <h3>Personal AI Agent</h3>
+            <div class="project-detail">
+              <p>
+                Built a locally hosted AI agent stack using OpenClaw, Gemma, LM Studio, and Ollama to experiment
+                with private, local-first AI workflows.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="achievements" class="section two-column">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2>University of Waterloo</h2>
+          <p class="lead">Honours Physics: Co-op, Computing Minor · Sept 2024 - Present</p>
+          <ul class="clean-list">
+            <li>GPA: 3.9 / 4.0</li>
+            <li>Term Distinction: Fall 2024, Winter 2025, Fall 2025</li>
+            <li>UW President’s Scholarship</li>
+            <li>Co-President, UW Quantum Club</li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow">Leadership</p>
+          <h2>Clubs and community</h2>
+          <ul class="clean-list">
+            <li>Co-founded North Park Secondary School Astronomy Club</li>
+            <li>
+              Helped create
+              <a href="https://uwquantum.com" target="_blank" rel="noopener">uwquantum.com</a>
+              as UW Quantum Club co-president
+            </li>
+            <li>Recruited executives and planned astronomy events</li>
+            <li>Co-managed club social media</li>
+            <li>CRLA-certified tutor recruited by Varsity Tutors</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section skills-section">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I use to learn, build, and explain</h2>
+        </div>
+        <div class="skill-cloud" aria-label="Skills list">
+          <span>Python</span>
+          <span>LaTeX</span>
+          <span>Racket</span>
+          <span>Excel</span>
+          <span>Linux</span>
+          <span>macOS</span>
+          <span>Adobe Premiere Pro</span>
+          <span>Tailscale</span>
+          <span>Ollama</span>
+          <span>LM Studio</span>
+          <span>Communication</span>
+          <span>Leadership</span>
+          <span>Customer Service</span>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s connect.</h2>
+          <p>
+            I’m open to co-op opportunities, tutoring roles, physics and computing projects, and student
+            community initiatives.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="mailto:kalraaairav@gmail.com" target="_blank" rel="noopener">
+            kalraaairav@gmail.com
+          </a>
+          <a
+            class="button secondary"
+            href="https://www.linkedin.com/in/aairav-kalra"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn
+          </a>
+          <a class="button secondary" href="aairav-kalra-resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <span>Brampton, Ontario</span>
+        </div>
+      </section>
+    </main>
+    <script>
+      (() => {
+        const canvas = document.getElementById("constellation-bg");
+        const context = canvas.getContext("2d");
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        let width = 0;
+        let height = 0;
+        let dots = [];
+        let animationId = null;
+        let lastFrame = 0;
+
+        const resize = () => {
+          const scale = Math.min(window.devicePixelRatio || 1, 1.5);
+          width = window.innerWidth;
+          height = window.innerHeight;
+          canvas.width = Math.floor(width * scale);
+          canvas.height = Math.floor(height * scale);
+          canvas.style.width = `${width}px`;
+          canvas.style.height = `${height}px`;
+          context.setTransform(scale, 0, 0, scale, 0, 0);
+          const count = Math.min(46, Math.max(24, Math.floor((width * height) / 33000)));
+          dots = Array.from({ length: count }, () => ({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            vx: (Math.random() - 0.5) * 0.22,
+            vy: (Math.random() - 0.5) * 0.22,
+            radius: Math.random() * 1 + 0.8,
+          }));
+        };
+
+        const draw = (time = 0) => {
+          if (time - lastFrame < 33) {
+            animationId = requestAnimationFrame(draw);
+            return;
+          }
+          const delta = Math.min(time - lastFrame, 50) / 16.67 || 1;
+          lastFrame = time;
+          context.clearRect(0, 0, width, height);
+
+          dots.forEach((dot) => {
+            dot.x += dot.vx * delta;
+            dot.y += dot.vy * delta;
+            if (dot.x < 0 || dot.x > width) {
+              dot.vx *= -1;
+              dot.x = Math.max(0, Math.min(width, dot.x));
+            }
+            if (dot.y < 0 || dot.y > height) {
+              dot.vy *= -1;
+              dot.y = Math.max(0, Math.min(height, dot.y));
+            }
+          });
+
+          for (let i = 0; i < dots.length; i += 1) {
+            for (let j = i + 1; j < dots.length; j += 1) {
+              const a = dots[i];
+              const b = dots[j];
+              const dx = a.x - b.x;
+              const dy = a.y - b.y;
+              const distance = Math.hypot(dx, dy);
+              const maxDistance = 136;
+              if (distance < maxDistance) {
+                const alpha = (1 - distance / maxDistance) * 0.26;
+                context.strokeStyle = `rgba(45, 41, 37, ${alpha})`;
+                context.lineWidth = 0.85;
+                context.beginPath();
+                context.moveTo(a.x, a.y);
+                context.lineTo(b.x, b.y);
+                context.stroke();
+              }
+            }
+          }
+
+          dots.forEach((dot) => {
+            context.fillStyle = "rgba(45, 41, 37, 0.52)";
+            context.beginPath();
+            context.arc(dot.x, dot.y, dot.radius, 0, Math.PI * 2);
+            context.fill();
+          });
+
+          animationId = requestAnimationFrame(draw);
+        };
+
+        const start = () => {
+          if (animationId || reducedMotion.matches) return;
+          animationId = requestAnimationFrame(draw);
+        };
+
+        const stop = () => {
+          if (!animationId) return;
+          cancelAnimationFrame(animationId);
+          animationId = null;
+        };
+
+        resize();
+        start();
+        window.addEventListener("resize", resize);
+        document.addEventListener("visibilitychange", () => (document.hidden ? stop() : start()));
+      })();
+
+      document.querySelectorAll("[data-project-node]").forEach((node) => {
+        const activate = () => {
+          document.querySelectorAll("[data-project-node]").forEach((item) => {
+            item.classList.remove("active");
+            item.setAttribute("aria-expanded", "false");
+          });
+          node.classList.add("active");
+          node.setAttribute("aria-expanded", "true");
+        };
+
+        node.addEventListener("click", activate);
+        node.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            activate();
+          }
+        });
+      });
+
+      (() => {
+        const header = document.querySelector(".site-header");
+        const hero = document.querySelector(".hero");
+        if (!header || !hero) return;
+
+        const updateHeaderTone = () => {
+          const heroBottom = hero.getBoundingClientRect().bottom;
+          header.classList.toggle("is-over-hero", heroBottom > header.offsetHeight * 0.6);
+        };
+
+        updateHeaderTone();
+        window.addEventListener("scroll", updateHeaderTone, { passive: true });
+        window.addEventListener("resize", updateHeaderTone);
+      })();
+    </script>
+  </body>
+</html>
