@@ -173,9 +173,10 @@ main {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('hero-bg-upright.jpg');
+  background-image: url('assets/hero-bg-upright.jpg');
   background-size: var(--hero-bg-size);
   background-position: var(--hero-bg-position);
+  filter: contrast(1.03) saturate(1.02);
   z-index: 0;
 }
 
@@ -236,7 +237,7 @@ main {
   max-width: none;
   object-fit: contain;
   transform: translate(var(--hero-cutout-shift-x), var(--hero-cutout-shift-y));
-  filter: drop-shadow(0 0 28px rgba(238, 236, 227, 0.12)) drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
+  filter: contrast(1.04) drop-shadow(0 0 28px rgba(238, 236, 227, 0.12)) drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
 }
 
 .hero-scroll-hint {
@@ -805,9 +806,9 @@ p {
       linear-gradient(to bottom, rgba(8, 6, 4, 0.22), transparent 36%, rgba(8, 6, 4, 0.76) 100%),
       radial-gradient(ellipse 34% 44% at 64% 72%, rgba(8, 6, 4, 0.62) 0%, rgba(8, 6, 4, 0.42) 44%, transparent 78%);
     --hero-banner-height: clamp(340px, 50vh, 480px);
-    --hero-content-top: clamp(168px, 34vw, 248px);
+    --hero-content-top: clamp(112px, 22vw, 172px);
     --hero-tagline-scale-x: 1.04;
-    --hero-tagline-offset: 4vh;
+    --hero-tagline-offset: -5vh;
     --hero-cutout-width: auto;
     --hero-cutout-height: 78%;
     --hero-cutout-shift-x: 0vw;
@@ -815,20 +816,50 @@ p {
   }
 
   .site-header {
-    padding: 14px;
+    display: block;
+    padding: 10px 14px 8px;
+  }
+
+  .brand {
+    display: block;
+    padding-right: 84px;
   }
 
   nav {
-    gap: 8px 12px;
-    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px 10px;
+    font-size: 0.86rem;
+    margin-top: 8px;
+    padding-right: 0;
+  }
+
+  .social-nav {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    gap: 8px;
+    margin-left: 0;
+  }
+
+  .icon-nav {
+    width: 18px;
+    height: 18px;
+  }
+
+  .icon-nav svg {
+    width: 15px;
+    height: 15px;
   }
 
   .hero-tagline {
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     font-size: clamp(2.6rem, 12vw, 5rem);
-    padding: 0 7vw;
+    padding: 8px 7vw 0;
   }
 
   .hero-cutout {
@@ -864,8 +895,8 @@ p {
       linear-gradient(to bottom, rgba(8, 6, 4, 0.24), transparent 38%, rgba(8, 6, 4, 0.78) 100%),
       radial-gradient(ellipse 38% 46% at 65% 72%, rgba(8, 6, 4, 0.66) 0%, rgba(8, 6, 4, 0.46) 46%, transparent 80%);
     --hero-banner-height: clamp(320px, 48vh, 440px);
-    --hero-content-top: clamp(180px, 42vw, 260px);
-    --hero-tagline-offset: 4.5vh;
+    --hero-content-top: clamp(126px, 30vw, 186px);
+    --hero-tagline-offset: -4vh;
     --hero-cutout-width: auto;
     --hero-cutout-height: 76%;
     --hero-cutout-shift-x: 0vw;
@@ -878,6 +909,26 @@ p {
 
   .hero-tagline {
     font-size: clamp(2.55rem, 12.8vw, 4.8rem);
-    padding: 0 7vw;
+    padding: 4px 7vw 0;
+  }
+
+  .site-header {
+    padding: 10px 12px 8px;
+  }
+
+  .brand {
+    padding-right: 74px;
+  }
+
+  nav {
+    gap: 5px 8px;
+    font-size: 0.82rem;
+    padding-right: 0;
+  }
+
+  .social-nav {
+    top: 10px;
+    right: 12px;
+    gap: 7px;
   }
 }
