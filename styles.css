@@ -173,7 +173,7 @@ main {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('assets/hero-bg-upright.jpg');
+  background-image: url('hero-bg-upright.jpg');
   background-size: var(--hero-bg-size);
   background-position: var(--hero-bg-position);
   filter: contrast(1.03) saturate(1.02);
