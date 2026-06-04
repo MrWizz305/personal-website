@@ -116,14 +116,7 @@
         <div class="timeline">
           <article class="icon-card teach">
             <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48">
-                <path d="M11 9h29v22H11V9Zm4 4v14h21V13H15Z" />
-                <path d="M7 31h20v5H7v-5Z" />
-                <circle cx="32" cy="25" r="5" />
-                <path d="M24 39c1-7 15-7 16 0H24Z" />
-                <path d="M20 31l-8-17 3-1 9 17-4 1Z" />
-                <path d="M15 15h17v3H15v-3Zm5 7h12v3H20v-3Z" />
-              </svg>
+              <img src="tutor-icon.jpg" alt="" />
             </span>
             <div class="date">Jan 2026 - Apr 2026</div>
             <h3>Math Tutor, Humber Polytechnic</h3>
@@ -135,13 +128,14 @@
               Led review sessions, workshops, and exam prep, created LaTeX learning material, promoted the
               Math & Writing Centre, and earned the highest student rating among tutors.
             </p>
+            <p>
+              Built an adaptive unit-conversion question generator and produced a large set of LaTeX handouts
+              and practice documents for Humber student support programming.
+            </p>
           </article>
           <article class="icon-card service">
             <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48">
-                <path d="M32 7l9 9-6 6-3-3-16 16-2 6-7-7 6-2 16-16-3-3 6-6Z" />
-                <path d="M10 34l4 4-5 3-2-2 3-5Z" />
-              </svg>
+              <img src="screwdriver-icon.jpg" alt="" />
             </span>
             <div class="date">Aug 2025 - Nov 2025</div>
             <h3>Merchandiser, The Brick</h3>
@@ -175,6 +169,7 @@
         </div>
         <div class="project-mindmap" aria-label="Interactive project mindmap">
           <svg class="mindmap-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M50 50 C49 34 50 21 50 10" />
             <path d="M50 50 C35 35 28 30 17 26" />
             <path d="M50 50 C58 31 62 22 76 20" />
             <path d="M50 50 C32 55 25 65 16 76" />
@@ -182,12 +177,30 @@
             <path d="M50 50 C49 63 49 74 50 88" />
           </svg>
           <button class="mindmap-center" type="button" aria-label="Project map center">Projects</button>
+          <article class="icon-card humber project-node" data-project-node="true" tabindex="0" role="button" aria-expanded="false">
+            <span class="card-icon" aria-hidden="true">
+              <img src="tutor-icon.jpg" alt="" />
+            </span>
+            <span>Education Tools</span>
+            <h3>Humber LaTeX Resources & Adaptive Generator</h3>
+            <div class="project-detail">
+              <p>
+                Created a large library of LaTeX learning documents for Humber students and built an automatic
+                question generator with adaptive difficulty for unit-conversion practice.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/MrWizz305/Automatic-Questions-Generator-Humber-SLS-"
+                target="_blank"
+                rel="noopener"
+              >
+                View generator code
+              </a>
+            </div>
+          </article>
           <article class="icon-card ml project-node active" data-project-node="true" tabindex="0" role="button" aria-expanded="true">
             <span class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48">
-                <path d="M18 14c5-5 15-4 19 2 4 7 0 16-8 18-9 2-17-6-15-15 1-2 2-4 4-5Z" />
-                <path d="M5 30c7-7 17-12 28-15 7-1 11 0 12 3 1 4-6 10-17 14-10 4-20 4-23 1-1-1-1-2 0-3Zm9 1c6 1 17-2 25-8-8 3-17 5-25 8Z" />
-              </svg>
+              <img src="saturn-icon.jpg" alt="" />
             </span>
             <span>Machine Learning</span>
             <h3>NASA Space Apps Exoplanet Classifier</h3>
@@ -347,6 +360,39 @@
           <span>Communication</span>
           <span>Leadership</span>
           <span>Customer Service</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Created Resources</p>
+          <h2>Humber learning materials I wrote in LaTeX</h2>
+        </div>
+        <div class="resource-grid" aria-label="Created Humber resources">
+          <a class="resource-card" href="unit-conversions.pdf" target="_blank" rel="noopener">
+            <strong>Unit Conversions</strong>
+            <span>An introduction to converting between linear units through dimensional analysis with practice problems.</span>
+          </a>
+          <a class="resource-card" href="even-and-odd-functions.pdf" target="_blank" rel="noopener">
+            <strong>Even and Odd Functions</strong>
+            <span>A visual introduction to even and odd functions, as well as symmetry in functions.</span>
+          </a>
+          <a class="resource-card" href="fourier-series-and-half-wave-symmetry.pdf" target="_blank" rel="noopener">
+            <strong>Fourier Series and Half-Wave Symmetry</strong>
+            <span>An introduction on how to represent functions using sine and cosine waves with practice problems.</span>
+          </a>
+          <a class="resource-card" href="intro-to-fractions.pdf" target="_blank" rel="noopener">
+            <strong>Intro to Fractions</strong>
+            <span>A beginner-friendly introduction to fractions, different types of fractions and converting between them (improper and mixed).</span>
+          </a>
+          <a class="resource-card" href="operations-with-fractions.pdf" target="_blank" rel="noopener">
+            <strong>Operations with fractions</strong>
+            <span>An extension from the introduction with a focus on different operations with practice problems.</span>
+          </a>
+          <a class="resource-card" href="civil-125.pdf" target="_blank" rel="noopener">
+            <strong>Structural Mechanics</strong>
+            <span>A statics-focused introduction to beams, supports, loads, and equilibrium equations.</span>
+          </a>
         </div>
       </section>
 
