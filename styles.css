@@ -513,7 +513,11 @@ p {
 
 .project-mindmap {
   position: relative;
-  min-height: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 64px clamp(28px, 5vw, 72px);
+  align-items: start;
+  padding: 8px 0;
 }
 
 .mindmap-lines {
@@ -533,9 +537,10 @@ p {
 }
 
 .mindmap-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: center;
+  justify-self: center;
   z-index: 1;
   width: 118px;
   height: 118px;
@@ -545,14 +550,12 @@ p {
   color: #ffffff;
   font: inherit;
   font-weight: 800;
-  transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
 .project-node {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  width: min(320px, 30%);
   min-height: 148px;
   cursor: pointer;
   outline: none;
@@ -622,62 +625,44 @@ p {
 }
 
 .project-node.ml {
-  left: 0;
-  top: 50px;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .project-node.humber {
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .project-node.product {
-  right: 0;
-  top: 50px;
+  grid-column: 3;
+  grid-row: 1;
 }
 
 .project-node.web {
-  left: 0;
-  top: calc(50% - 30px);
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .project-node.systems {
-  right: 0;
-  top: calc(50% - 30px);
+  grid-column: 3;
+  grid-row: 2;
 }
 
 .project-node.ai {
-  left: 50%;
-  bottom: 0;
-  width: min(340px, 30%);
-  transform: translateX(calc(-100% - 12px));
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .project-node.ytdl {
-  left: 50%;
-  bottom: 0;
-  width: min(340px, 30%);
-  transform: translateX(12px);
-}
-
-.project-node.ai.active {
-  transform: translateX(calc(-100% - 12px)) translateY(-3px);
-}
-
-.project-node.ytdl.active {
-  width: min(460px, 42%);
-  transform: translateX(12px) translateY(-3px);
+  grid-column: 3;
+  grid-row: 3;
 }
 
 .project-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0 8px;
-}
-
-.project-node.humber.active {
-  transform: translateX(-50%) translateY(-3px);
 }
 
 .two-column {
@@ -843,9 +828,9 @@ p {
   }
 
   .project-mindmap {
-    display: grid;
+    grid-template-columns: 1fr;
     gap: 16px;
-    min-height: 0;
+    padding: 0;
   }
 
   .mindmap-lines,
@@ -855,21 +840,14 @@ p {
 
   .project-node,
   .project-node.ml,
+  .project-node.humber,
   .project-node.product,
   .project-node.web,
   .project-node.systems,
   .project-node.ai,
   .project-node.ytdl {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    transform: none;
-  }
-
-  .project-node.ai.active,
-  .project-node.ytdl.active {
-    width: 100%;
-    transform: translateY(-3px);
+    grid-column: auto;
+    grid-row: auto;
   }
 
   .contact-actions {

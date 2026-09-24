@@ -569,16 +569,23 @@
 
       document.querySelectorAll("[data-project-node]").forEach((node) => {
         const activate = () => {
+          const wasActive = node.classList.contains("active");
           document.querySelectorAll("[data-project-node]").forEach((item) => {
             item.classList.remove("active");
             item.setAttribute("aria-expanded", "false");
           });
-          node.classList.add("active");
-          node.setAttribute("aria-expanded", "true");
+          if (!wasActive) {
+            node.classList.add("active");
+            node.setAttribute("aria-expanded", "true");
+          }
         };
 
-        node.addEventListener("click", activate);
+        node.addEventListener("click", (event) => {
+          if (event.target.closest("a")) return;
+          activate();
+        });
         node.addEventListener("keydown", (event) => {
+          if (event.target.closest("a")) return;
           if (event.key === "Enter" || event.key === " ") {
             event.preventDefault();
             activate();
