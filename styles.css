@@ -513,7 +513,7 @@ p {
 
 .project-mindmap {
   position: relative;
-  min-height: 760px;
+  min-height: 980px;
 }
 
 .mindmap-lines {
@@ -638,22 +638,39 @@ p {
 
 .project-node.web {
   left: 0;
-  bottom: 52px;
+  top: 340px;
 }
 
 .project-node.systems {
   right: 0;
-  bottom: 72px;
+  top: 340px;
 }
 
 .project-node.ai {
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%);
+  transform: translateX(calc(-100% - 12px));
+}
+
+.project-node.ytdl {
+  left: 50%;
+  bottom: 0;
+  width: min(400px, 36%);
+  transform: translateX(12px);
 }
 
 .project-node.ai.active {
-  transform: translateX(-50%) translateY(-3px);
+  transform: translateX(calc(-100% - 12px)) translateY(-3px);
+}
+
+.project-node.ytdl.active {
+  transform: translateX(12px) translateY(-3px);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
 }
 
 .project-node.humber.active {
@@ -838,14 +855,16 @@ p {
   .project-node.product,
   .project-node.web,
   .project-node.systems,
-  .project-node.ai {
+  .project-node.ai,
+  .project-node.ytdl {
     position: relative;
     inset: auto;
     width: 100%;
     transform: none;
   }
 
-  .project-node.ai.active {
+  .project-node.ai.active,
+  .project-node.ytdl.active {
     transform: translateY(-3px);
   }
 
