@@ -188,15 +188,7 @@
           <p class="eyebrow">Projects</p>
         </div>
         <div class="project-mindmap" aria-label="Interactive project mindmap">
-          <svg class="mindmap-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M50 50 C49 34 50 24 50 15" />
-            <path d="M50 50 C38 40 33 24 27 20" />
-            <path d="M50 50 C62 40 67 24 73 20" />
-            <path d="M50 50 C40 52 34 47 27 44" />
-            <path d="M50 50 C60 52 66 47 73 44" />
-            <path d="M50 50 C46 62 44 74 42 84" />
-            <path d="M50 50 C54 62 56 74 58 84" />
-          </svg>
+          <svg class="mindmap-lines" aria-hidden="true"></svg>
           <button class="mindmap-center" type="button" aria-label="Project map center">Projects</button>
           <article class="icon-card humber project-node" data-project-node="true" tabindex="0" role="button" aria-expanded="false">
             <span class="card-icon" aria-hidden="true">
@@ -593,6 +585,47 @@
           }
         });
       });
+
+      (() => {
+        const map = document.querySelector(".project-mindmap");
+        const svg = map && map.querySelector(".mindmap-lines");
+        const center = map && map.querySelector(".mindmap-center");
+        if (!svg || !center) return;
+        const nodes = [...map.querySelectorAll("[data-project-node]")];
+        const ns = "http://www.w3.org/2000/svg";
+
+        const drawLines = () => {
+          const box = map.getBoundingClientRect();
+          svg.replaceChildren();
+          if (getComputedStyle(center).display === "none") return;
+          svg.setAttribute("viewBox", `0 0 ${box.width} ${box.height}`);
+          const c = center.getBoundingClientRect();
+          const cx = c.left - box.left + c.width / 2;
+          const cy = c.top - box.top + c.height / 2;
+          nodes.forEach((node) => {
+            const r = node.getBoundingClientRect();
+            const left = r.left - box.left;
+            const top = r.top - box.top;
+            const ex = Math.min(Math.max(cx, left), left + r.width);
+            const ey = Math.min(Math.max(cy, top), top + r.height);
+            const mx = (cx + ex) / 2;
+            const my = (cy + ey) / 2;
+            const nx = -(ey - cy) * 0.08;
+            const ny = (ex - cx) * 0.08;
+            const path = document.createElementNS(ns, "path");
+            path.setAttribute("d", `M${cx} ${cy} Q${mx + nx} ${my + ny} ${ex} ${ey}`);
+            svg.appendChild(path);
+          });
+        };
+
+        const observer = new ResizeObserver(drawLines);
+        observer.observe(map);
+        nodes.forEach((node) => {
+          observer.observe(node);
+          node.addEventListener("click", () => setTimeout(drawLines, 220));
+        });
+        drawLines();
+      })();
 
       (() => {
         const header = document.querySelector(".site-header");
