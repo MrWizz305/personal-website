@@ -157,7 +157,7 @@ main {
     linear-gradient(to bottom, transparent 74%, rgba(8, 6, 4, 0.78) 100%);
   --hero-banner-height: clamp(420px, 50vh, 620px);
   --hero-content-top: clamp(76px, 6vw, 98px);
-  --hero-tagline-offset: -1vh;
+  --hero-tagline-offset: 3vh;
   --hero-tagline-scale-x: 1.24;
   --hero-cutout-width: auto;
   --hero-cutout-height: 80%;
@@ -810,7 +810,7 @@ p {
     --hero-banner-height: clamp(380px, 52vh, 520px);
     --hero-content-top: clamp(118px, 16vw, 172px);
     --hero-tagline-scale-x: 1.08;
-    --hero-tagline-offset: 3vh;
+    --hero-tagline-offset: 7vh;
     --hero-cutout-width: auto;
     --hero-cutout-height: 80%;
     --hero-cutout-shift-x: 0vw;
@@ -875,7 +875,7 @@ p {
     --hero-banner-height: clamp(340px, 50vh, 480px);
     --hero-content-top: clamp(112px, 22vw, 172px);
     --hero-tagline-scale-x: 1.04;
-    --hero-tagline-offset: -5vh;
+    --hero-tagline-offset: -1vh;
     --hero-cutout-width: auto;
     --hero-cutout-height: 78%;
     --hero-cutout-shift-x: 0vw;
@@ -963,7 +963,7 @@ p {
       radial-gradient(ellipse 38% 46% at 65% 72%, rgba(8, 6, 4, 0.66) 0%, rgba(8, 6, 4, 0.46) 46%, transparent 80%);
     --hero-banner-height: clamp(320px, 48vh, 440px);
     --hero-content-top: clamp(126px, 30vw, 186px);
-    --hero-tagline-offset: -4vh;
+    --hero-tagline-offset: 0vh;
     --hero-cutout-width: auto;
     --hero-cutout-height: 76%;
     --hero-cutout-shift-x: 0vw;
