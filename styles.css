@@ -212,7 +212,7 @@ main {
   pointer-events: none;
   user-select: none;
   padding: 0 4vw;
-  transform: translateY(calc(var(--hero-tagline-offset) + 1em)) scale(var(--hero-tagline-scale-x), 1.8);
+  transform: translateY(calc(var(--hero-tagline-offset) + 1.6em)) scale(var(--hero-tagline-scale-x), 1.8);
   transform-origin: center;
 }
 
